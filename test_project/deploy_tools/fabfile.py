@@ -46,7 +46,7 @@ def _update_settings(source_folder, site_name):
         append(secret_key_file, secret_key_string)
     append(settings_path, '\nfrom .secret_key import SECRET_KEY')
 
-def _update_virtualenv(source_foler):
+def _update_virtualenv(source_folder):
     virtualenv_folder = source_folder + '/../virtualenv'
     if not exists(virtualenv_folder + '/bin/pip'):
         command = 'python3.5 -m venv ' + virtualenv_folder
