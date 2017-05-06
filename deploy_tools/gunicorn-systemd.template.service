@@ -3,7 +3,7 @@ Description=Gunicorn server for SITENAME
 
 [Service]
 Restart=on-failure
-User=elspeth
+User=mferrante
 WorkingDirectory=/home/mferrante/sites/SITENAME/source
 ExecStart=/home/mferrante/sites/SITENAME/virtualenv/bin/gunicorn \
     --bind unix:/tmp/SITENAME.socket \
