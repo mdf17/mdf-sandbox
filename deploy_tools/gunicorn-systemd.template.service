@@ -7,7 +7,7 @@ User=elspeth
 WorkingDirectory=/home/mferrante/sites/SITENAME/source
 ExecStart=/home/mferrante/sites/SITENAME/virtualenv/bin/gunicorn \
     --bind unix:/tmp/SITENAME.socket \
-    superlists.wsgi:application
+    test_project.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
